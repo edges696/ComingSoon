@@ -1,0 +1,90 @@
+body {
+   background-color: #191919;
+}
+
+.content {
+   width: 650px;
+   height: 760px;
+   background-color: #FE8002 ;
+   border-radius: 5px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 5px;
+}
+
+.header {
+  align-content: center;
+  text-align: center;
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 85px;
+}
+
+.rules1 {
+  font-size: medium;
+  padding-left: 5px;
+  font-family: "Sigmar One", cursive;
+}
+
+.lista {
+  font-family: "Barlow", sans-serif;
+}
+
+.format {
+  width: 550px;
+  padding:5px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#myForm {
+   width: fit-content;
+   padding: 5px;
+}
+
+.info {
+  font-family: "Mate SC", serif;
+  text-align: justify;
+  font-size: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.custom {
+   width: 600px;
+   padding: 10px;
+   margin-left: 2%;
+   margin-top: 2%;
+}
+
+.footer {
+   font-family: "Mate SC", serif;
+   font-size: 18px;
+   text-align: center;
+   justify-content: center;
+   margin-top: 2%;
+}
+.socialmedia {
+   width: 650px;
+   height: 32px;
+   display: flex;
+   flex-direction: row;
+   margin: 2%; 
+   justify-content: center; 
+   gap: 5px;
+  
+}
+
+.boton {
+  margin-left: 300px;
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 2px;
+}

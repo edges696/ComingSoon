@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halloween Box 2021</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Mate+SC&family=Odibee+Sans&family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function SubForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/13398/",
+          type: "post",
+          data: $("#myForm").serializeArray(),
+          success: function () {
+            alert("Todo Listo! Feliz Halloween 🎃");
+          },
+          error: function () {
+            alert("Intenta de Nuevo 💀");
+          },
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="content">
+    <div class="header">Halloween Box 2021 </div>
+    <div class="info">
+         <center><img src="https://img.icons8.com/android/24/000000/bat.png"/> <b>¡Ingresa tus datos para Participar! <img src="https://img.icons8.com/ios-glyphs/30/000000/jack-o-lantern.png"/><br></center></b>
+    </div>
+    <div class="rules">
+         <p class="rules1">Para Considerar:</p>
+         <ol class="lista">
+            <li><b>Fecha Límite para entrega de Intercambio:</b> 20 de Octubre</li>
+            <li><b>Monto Mínimo:</b> 5000 Colones</li>
+            <li><b>Asignación de Parejas:</b> 30 de Setiembre</li>
+            <li><b>Envío de Info de Intercambios:</b> 1ero de Octubre</li>
+            <li>Envíemos nuestro intercambio a Tiempo</li>
+            <li>Intercambio Temático exclusivo de Halloween</li>
+         </ol>
+      </div>
+    <form class="format" id="myForm">
+      <label>Nombre Completo</label>
+      <br />
+      <input class="custom" name="full_name" />
+      <br />
+      <label>Email</label>
+      <br />
+      <input class="custom" name="email" />
+      <br />
+      <label>Telefono</label>
+      <br />
+      <input class="custom" name="telefono" />
+      <br />
+      <label>Dirección Completa</label>
+      <br />
+      <textarea class="custom" name="direccion"> </textarea>
+      <br />
+      <br />
+    </form>
+    <button class="boton" onclick="SubForm()">Submit</button>
+    <div class="footer">Encontrá mas de Halloween506 en:</div>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com/groups/Halloween506"><img src="https://i.postimg.cc/x1kYbn2n/iconfinder-Rounded-Facebook-svg-5282541.png"></a>
+        <a href="https://www.instagram.com/halloween_506/"><img src="https://i.postimg.cc/GmZRFVLY/iconfinder-Rounded-Instagram-svg-5282544.png"></a>
+    </div>
+    </div>
+  </body>
+</html>
