@@ -1,0 +1,44 @@
+body {
+   background-color: black;
+}
+
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+   font-family: 'Creepster', cursive;
+   color: #D05026 ;
+   text-align: center;
+   font-size: 50px;
+}
+
+.foto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 260px;
+}
+
+#demo {
+   font-family: 'Bebas Neue', cursive;
+   color: #D05026;
+   font-size: 35px;
+   text-align: center;
+}
+.formulario {
+   font-family: 'Creepster', cursive;
+   color: #D05026;
+   font-size: 35px;
+   text-align: center;
+   margin-top: -20%;
+}
+
